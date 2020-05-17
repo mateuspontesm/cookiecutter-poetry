@@ -32,7 +32,7 @@ Install the latest Cookiecutter if you haven't installed it yet
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/johanvergeer/cookiecutter-poetry.git
+    cookiecutter https://github.com/mateuspontesm/cookiecutter-poetry.git
 
 Then:
 

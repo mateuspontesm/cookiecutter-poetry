@@ -1,7 +1,7 @@
 {
-    "full_name": "Johan Vergeer",
-    "email": "johan@example.com",
-    "github_username": "johanvergeer",
+    "full_name": "Mateus Mota",
+    "email": "mateus@example.com",
+    "github_username": "mateuspontesm",
     "project_name": "Python Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",

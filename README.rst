@@ -15,7 +15,9 @@ Cookiecutter_ template for a Python package.
 Features
 --------
 
-* Testing setup with ``pytest``
+* Testing setup with ``pytest`` and ``tox``
+* ``poetry`` for managing dependencies
+* ``flake8`` for linting
 * `Github Actions`_: Ready for GitHub actions
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Auto-release to PyPI_ when you push a new tag to master (optional)

@@ -285,8 +285,7 @@ def test_bake_with_click_console_script_files(bake_result: Result) -> None:
     )
     assert f'Click = "^7.0"' in bake_result.project.join("pyproject.toml").read()
     assert (
-        """[tool.poetry.plugins.\"console_scripts\"]
-    \"python_boilerplate\" = \"python_boilerplate.cli:main\""""
+        """[tool.poetry.plugins.\"console_scripts\"]\n\"python_boilerplate\" = \"python_boilerplate.cli:main\""""
         in bake_result.project.join("pyproject.toml").read()
     )
 

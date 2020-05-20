@@ -20,9 +20,10 @@
 import os
 import re
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+# ../src seems to be needed for some reason
+sys.path.insert(0, os.path.abspath('../src'))
 
-import {{ cookiecutter.project_slug }}
+import {{ cookiecutter.module_name }}
 
 # -- General configuration ---------------------------------------------
 

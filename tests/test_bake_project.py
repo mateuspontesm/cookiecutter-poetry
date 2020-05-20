@@ -342,13 +342,13 @@ def test_version(cookies: Cookies, version: str, short_version: str) -> None:
 
 def test_bumpversion_config_file(bake_result: Result):
     """bumpversion config should be the same as the config for the main project,
-    except for the initial version number"""
+    except for the initial version number and the final lines"""
     expected_content = (PROJECT_ROOT_DIR / ".bumpversion.cfg").read_text()
     expected_content = re.sub(
         r"([0-9]+\.){2}[0-9]+(-(dev|prod)[0-9]+)?", "0.1.0", expected_content
     )
 
-    assert bake_result.project.join(".bumpversion.cfg").read() == expected_content
+    assert expected_content in bake_result.project.join(".bumpversion.cfg").read() 
 
 
 # endregion

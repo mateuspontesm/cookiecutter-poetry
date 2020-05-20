@@ -201,7 +201,7 @@ def test_bake_without_docs(bake_result: Result) -> None:
         (
             "BSD 3-Clause 'New' or 'Revised' License",
             "BSD-3-Clause",
-            f"Copyright (c) {datetime.date.today().year} Johan Vergeer",
+            f"Copyright (c) {datetime.date.today().year} Mateus Mota",
         ),
         (
             "GNU Lesser General Public License v2.1",
@@ -211,7 +211,7 @@ def test_bake_without_docs(bake_result: Result) -> None:
         (
             "BSD 2-Clause 'Simplified' License",
             "BSD-2-Clause",
-            f"Copyright (c) {datetime.date.today().year} Johan Vergeer",
+            f"Copyright (c) {datetime.date.today().year} Mateus Mota",
         ),
     ],
 )

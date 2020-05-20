@@ -21,10 +21,10 @@ Main additions
 --------------
 
 * Added version attribute to init
-* Added update to version attribute on `bumpversion`
-* Some changes to better combine `poetry`, `travis` and `tox`
-* Added pre-commit and yapf
-* Added `codecov` and `coveralls` support on travis
+* Added update to version attribute on ``bumpversion``
+* Some changes to better combine ``poetry``, ``travis`` and ``tox``
+* Added ``pre-commit`` and ``yapf``
+* Added ``codecov`` and ``coveralls`` support on travis
 
 TODO
 ----

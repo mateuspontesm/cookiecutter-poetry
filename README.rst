@@ -2,6 +2,23 @@
 Cookiecutter Poetry
 ===================
 
+A fork from https://github.com/johanvergeer/cookiecutter-poetry/
+
+Main additions
+--------------
+
+* Added version attribute to init
+* Added update to version attribute on `bumpversion`
+* Some changes to better combine `poetry`, `travis` and `tox`
+* Added pre-commit and yapf
+* Added `codecov` and `coveralls` support on travis
+
+TODO
+----
+[ ] Add appveyor
+
+
+
 Cookiecutter_ template for a Python package.
 
 .. image:: https://github.com/mateuspontesm/cookiecutter-poetry/workflows/Python%20test/badge.svg?branch=master
@@ -21,6 +38,7 @@ Features
 * `Github Actions`_: Ready for GitHub actions
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Auto-release to PyPI_ when you push a new tag to master (optional)
+* Travis support
 * Command line interface using Click (optional)
 * GitHub Issue templates for bug reports and feature requests
 

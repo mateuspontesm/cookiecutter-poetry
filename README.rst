@@ -20,15 +20,18 @@ Information on the original:
 Main additions
 --------------
 
-* Added version attribute to init
+* Added version attribute to ``init.py``
 * Added update to version attribute on ``bumpversion``
 * Some changes to better combine ``poetry``, ``travis`` and ``tox``
 * Added ``pre-commit`` and ``yapf``
 * Added ``codecov`` and ``coveralls`` support on travis
+* Updated sphinx support with ``sphinx_rtd_theme`` and some changes on
+  the original ``conf.py``
 
 TODO
 ----
 [  ] Add appveyor
+[  ] Add codacy
 
 
 Original Features

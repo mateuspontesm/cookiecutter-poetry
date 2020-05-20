@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.create_author_file }}" != "y":
         remove("AUTHORS.rst")
-        remove("docs/authors.rst")
+        remove("docs/source/authors.rst")
 
     if "{{ cookiecutter.create_docs }}" != "y":
         remove("docs")

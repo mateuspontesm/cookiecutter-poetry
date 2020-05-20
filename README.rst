@@ -27,10 +27,12 @@ Main additions
 * Added ``codecov`` and ``coveralls`` support on travis
 * Updated sphinx support with ``sphinx_rtd_theme`` and some changes on
   the original ``conf.py``
+* Added support for ``readthedocs``
 
 TODO
 ----
 [  ] Add appveyor
+
 [  ] Add codacy
 
 

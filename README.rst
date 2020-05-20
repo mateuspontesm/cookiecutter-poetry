@@ -4,8 +4,8 @@ Cookiecutter Poetry
 
 Cookiecutter_ template for a Python package.
 
-.. image:: https://github.com/johanvergeer/cookiecutter-poetry/workflows/Python%20test/badge.svg?branch=master
-    :target: https://github.com/johanvergeer/cookiecutter-poetry/actions
+.. image:: https://github.com/mateuspontesm/cookiecutter-poetry/workflows/Python%20test/badge.svg?branch=master
+    :target: https://github.com/mateuspontesm/cookiecutter-poetry/actions
     :alt: Linux build status on Github Actions
 
 * GitHub repo: https://github.com/johanvergeer/cookiecutter-poetry/

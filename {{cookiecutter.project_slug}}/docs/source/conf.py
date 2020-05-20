@@ -103,7 +103,7 @@ add_module_names = False
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only set the theme if we're building docs locally
-    html_theme = 'sphinx_rtd_theme'
+    html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
@@ -121,10 +121,10 @@ html_static_path = ['_static']
 
 html_sidebars = {
     '**': [
-        # 'about.html',
+        'about.html',
         'badges.html',
-        # 'navigation.html',
-        # 'moreinfo.html',
+        'navigation.html',
+        'moreinfo.html',
         'github.html',
         'searchbox.html',
     ],

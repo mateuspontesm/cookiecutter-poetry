@@ -160,11 +160,11 @@ def test_bake_without_travis_pypi_setup(bake_result: Result) -> None:
 def test_bake_without_author_file(bake_result: Result) -> None:
     found_toplevel_files = [f.basename for f in bake_result.project.listdir()]
     assert "AUTHORS.rst" not in found_toplevel_files
-    doc_files = [f.basename for f in bake_result.project.join("docs").listdir()]
+    doc_files = [f.basename for f in bake_result.project.join("docs/source").listdir()]
     assert "authors.rst" not in doc_files
 
     # Assert there are no spaces in the toc tree
-    docs_index_path = bake_result.project.join("docs/index.rst")
+    docs_index_path = bake_result.project.join("docs/source/index.rst")
     with open(str(docs_index_path)) as index_file:
         assert "contributing\n   history" in index_file.read()
 
@@ -330,12 +330,12 @@ def test_bake_with_click_console_script(
 def test_version(cookies: Cookies, version: str, short_version: str) -> None:
     with bake_in_temp_dir(cookies, extra_context={"version": version}) as result:
         assert f'version = "{version}"' in result.project.join("pyproject.toml").read()
-        assert f'release = "{version}"' in result.project.join("docs/conf.py").read()
+        assert f'release = "{version}"' in result.project.join("docs/source/conf.py").read()
 
         regex = r"^([0-9]+\.){2}[0-9]+"  # Same regex used in docs/conf.py
         assert (
             f'version = re.match(r"{regex}", release).group(0)'
-            in result.project.join("docs/conf.py").read()
+            in result.project.join("docs/source/conf.py").read()
         )
         assert re.match(regex, version).group(0) == short_version
 

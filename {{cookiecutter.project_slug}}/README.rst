@@ -33,7 +33,9 @@ Features
 Credits
 -------
 
-This package was created with Cookiecutter_ and the `johanvergeer/cookiecutter-poetry`_ project template.
+This package was created with Cookiecutter_ and the `mateuspontesm/cookiecutter-poetry`_ project template,
+a fork of `johanvergeer/cookiecutter-poetry`_ project template
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`johanvergeer/cookiecutter-poetry`: https://github.com/johanvergeer/cookiecutter-poetry
+.. _`mateuspontesm/cookiecutter-poetry`: https://github.com/mateuspontesm/cookiecutter-poetry

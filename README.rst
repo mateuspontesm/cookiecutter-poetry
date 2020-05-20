@@ -2,6 +2,16 @@
 Cookiecutter Poetry
 ===================
 
+Cookiecutter_ template for a Python package.
+
+.. image:: https://github.com/mateuspontesm/cookiecutter-poetry/workflows/Python%20test/badge.svg?branch=master
+    :target: https://github.com/mateuspontesm/cookiecutter-poetry/actions
+    :alt: Linux build status on Github Actions
+
+* GitHub repo: https://github.com/johanvergeer/cookiecutter-poetry/
+* Documentation: https://cookiecutter-poetry.readthedocs.io/
+* Free software: MIT license
+
 A fork from https://github.com/johanvergeer/cookiecutter-poetry/
 
 Main additions
@@ -18,19 +28,8 @@ TODO
 [ ] Add appveyor
 
 
-
-Cookiecutter_ template for a Python package.
-
-.. image:: https://github.com/mateuspontesm/cookiecutter-poetry/workflows/Python%20test/badge.svg?branch=master
-    :target: https://github.com/mateuspontesm/cookiecutter-poetry/actions
-    :alt: Linux build status on Github Actions
-
-* GitHub repo: https://github.com/johanvergeer/cookiecutter-poetry/
-* Documentation: https://cookiecutter-poetry.readthedocs.io/
-* Free software: MIT license
-
-Features
---------
+Original Features
+-----------------
 
 * Testing setup with ``pytest`` and ``tox``
 * ``poetry`` for managing dependencies

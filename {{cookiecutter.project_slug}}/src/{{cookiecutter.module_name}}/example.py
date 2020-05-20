@@ -3,7 +3,8 @@
 
 
 def some_function(first: int, second: int) -> int:
-    """ Test example
+    """Test example
+
     We use this function as an example for some real logic.
     This is how you can write a doctest:
     .. code:: python

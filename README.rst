@@ -8,11 +8,14 @@ Cookiecutter_ template for a Python package.
     :target: https://github.com/mateuspontesm/cookiecutter-poetry/actions
     :alt: Linux build status on Github Actions
 
+A fork from https://github.com/johanvergeer/cookiecutter-poetry/
+
+Information on the original:
+
 * GitHub repo: https://github.com/johanvergeer/cookiecutter-poetry/
 * Documentation: https://cookiecutter-poetry.readthedocs.io/
 * Free software: MIT license
 
-A fork from https://github.com/johanvergeer/cookiecutter-poetry/
 
 Main additions
 --------------
@@ -25,7 +28,7 @@ Main additions
 
 TODO
 ----
-[ ] Add appveyor
+[  ] Add appveyor
 
 
 Original Features

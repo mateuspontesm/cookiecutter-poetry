@@ -348,7 +348,9 @@ def test_bumpversion_config_file(bake_result: Result):
         r"([0-9]+\.){2}[0-9]+(-(dev|prod)[0-9]+)?", "0.1.0", expected_content
     )
 
-    assert expected_content in bake_result.project.join(".bumpversion.cfg").read() 
+    expected_content.join("\n\n[bumpversion:file:src/python_boilerplate/__init__.py]\nsearch = __version__ = '{current_version}'\nreplace = __version__ = '{new_version}'\n")
+
+    assert expected_content == bake_result.project.join(".bumpversion.cfg").read()
 
 
 # endregion

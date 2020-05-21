@@ -21,9 +21,9 @@ import os
 import re
 import sys
 # ../src seems to be needed for some reason
-sys.path.insert(0, os.path.abspath('../src'))
+sys.path.insert(0, os.path.abspath('../../src'))
 
-import {{ cookiecutter.module_name }}
+import {{ cookiecutter.module_name }}  # noqa: E402, F401
 
 # -- General configuration ---------------------------------------------
 
@@ -40,11 +40,24 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.extlinks',
     'sphinx.ext.ifconfig',
-    # 'sphinx.ext.napoleon',
-    'numpydoc'
+    'sphinx.ext.napoleon',
+    # 'numpydoc'
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
 ]
+
+# Napoleon settings
+napoleon_google_docstring = True
+napoleon_numpy_docstring = True
+napoleon_include_init_with_doc = False
+napoleon_include_private_with_doc = False
+napoleon_include_special_with_doc = True
+napoleon_use_admonition_for_examples = False
+napoleon_use_admonition_for_notes = False
+napoleon_use_admonition_for_references = False
+napoleon_use_ivar = True
+napoleon_use_param = False
+napoleon_use_rtype = False  # More legible
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -124,7 +137,6 @@ html_sidebars = {
         'about.html',
         'badges.html',
         'navigation.html',
-        'moreinfo.html',
         'github.html',
         'searchbox.html',
     ],

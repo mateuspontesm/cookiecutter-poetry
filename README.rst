@@ -28,6 +28,8 @@ Main additions
 * Updated sphinx support with ``sphinx_rtd_theme`` and some changes on
   the original ``conf.py``
 * Added support for ``readthedocs``
+* More test envs: doc tests
+  and some checks (flake8, manifest-check, isort and poetry check)
 
 TODO
 ----

@@ -50,7 +50,7 @@ wheel = "^0.33.6"
 watchdog = "^0.9.0"
 # Style:
 flake8 = "^3.7.8"
-isort = "^4.3.21"
+isort = {extras = ["pyproject"], version = "^4.3.21"}
 yapf = "^0.29.0"
 pre-commit = "^2.1.0"
 # Testing:
@@ -58,6 +58,7 @@ tox = "^3.14.0"
 coverage = "^4.5.4"
 pytest = "^4.6.5"
 pytest-runner = "^5.1"
+pytest-cov = "^2.6.0"
 # Docs:
 {% if cookiecutter.create_docs == "y" -%}
 Sphinx = "^1.8.5"

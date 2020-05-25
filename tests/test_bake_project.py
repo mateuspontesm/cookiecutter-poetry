@@ -329,14 +329,7 @@ def test_bake_with_click_console_script(
 def test_version(cookies: Cookies, version: str, short_version: str) -> None:
     with bake_in_temp_dir(cookies, extra_context={"version": version}) as result:
         assert f'version = "{version}"' in result.project.join("pyproject.toml").read()
-        assert f'release = "{version}"' in result.project.join("docs/source/conf.py").read()
-
-        regex = r"^([0-9]+\.){2}[0-9]+"  # Same regex used in docs/conf.py
-        assert (
-            f'version = re.match(r"{regex}", release).group(0)'
-            in result.project.join("docs/source/conf.py").read()
-        )
-        assert re.match(regex, version).group(0) == short_version
+        assert f'version = release = "{version}"' in result.project.join("docs/source/conf.py").read()
 
 
 # def test_bumpversion_config_file(bake_result: Result):

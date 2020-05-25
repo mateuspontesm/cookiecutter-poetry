@@ -324,7 +324,6 @@ def test_bake_with_click_console_script(
         ("0.0.1", "0.0.1"),
         ("0.1.0", "0.1.0"),
         ("1.0.0", "1.0.0"),
-        ("1.0.0-dev0", "1.0.0"),
     ],
 )
 def test_version(cookies: Cookies, version: str, short_version: str) -> None:

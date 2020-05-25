@@ -28,7 +28,7 @@ deploy:
   script: poetry publish
   on:
     tags: true
-    condition: "$TRAVIS_PYTHON_VERSION == 3.7"
+    python: 3.7
     repo: {{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 ### Old configuration: ------ ###
 # deploy:

@@ -13,6 +13,15 @@
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
         :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
+
+.. image:: https://coveralls.io/repos/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/badge.svg
+        :alt: Coverage Status
+        :target: https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+
+.. image:: https://codecov.io/gh{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/branch/master/graphs/badge.svg?branch=master
+        :alt: Coverage Status
+        :target: https://codecov.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+
 {%- endif %}
 
 
